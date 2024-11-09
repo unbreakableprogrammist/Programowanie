@@ -1,3 +1,0 @@
-C:/Users/krzys/CLionProjects/studia/cmake-build-debug/CMakeFiles/untilted.dir
-C:/Users/krzys/CLionProjects/studia/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/krzys/CLionProjects/studia/cmake-build-debug/CMakeFiles/rebuild_cache.dir
