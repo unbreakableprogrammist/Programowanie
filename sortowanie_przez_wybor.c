@@ -27,6 +27,7 @@ int main(void) {
         tab[indx] = tab[i];
         tab[i] = mini;
     }
+    // printf("sortowanie przez wybor");
     for (int i = 0; i < N; i++) {
         printf("%d ", tab[i]);
     }
