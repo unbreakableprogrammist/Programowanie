@@ -1,0 +1,3 @@
+/Users/kwojt/CLionProjects/W13_1/cmake-build-debug/CMakeFiles/W13_1.dir
+/Users/kwojt/CLionProjects/W13_1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/kwojt/CLionProjects/W13_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
