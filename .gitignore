@@ -1,3 +1,5 @@
 **/cmake-build-debug
 **/.idea
 **/CMakeLists.txt
+**/.DS_Store
+PS1_C
