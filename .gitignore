@@ -2,4 +2,5 @@
 **/.idea
 **/CMakeLists.txt
 **/.DS_Store
+.DS_Store
 PS1_C
