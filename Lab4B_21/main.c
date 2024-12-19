@@ -147,7 +147,7 @@ int polynomial_generator(array* w, int st, int a, int b) {
 	w->n = st+1;
 
 	// losujemy wyraz wolny, jeśli zero to zmieniamy bo nie moze byc zero
-	w->w[0] = a + rand() & (b-a+1);
+	w->w[0] = a + rand() % (b-a+1);
 	if (w->w[0] == 0) w->w[0] += 1;
 
 	// wypelniamy zerami
