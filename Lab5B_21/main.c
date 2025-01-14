@@ -41,7 +41,7 @@ int main(void)
 	"które nie lubiły Yossariana. Oglądali kartę choroby wiszącą w nogach łóżka i wypytywali go",
 	"niecierpliwie o bóle. Denerwowało ich, kiedy mówił, że bóle są takie same jak dotychczas." };
 
-	setlocale(LC_ALL, "pl_PL.UTF-8"); //polskie znaki w konsoli
+	setlocale(LC_ALL, "Polish"); //polskie znaki w konsoli
 
 	ilosc_wierszy = sizeof(azazel) / sizeof(char*);
 
