@@ -29,7 +29,7 @@ int main(void)
 {
     // Zadanie 2
     const char *str = "idzie zima";
-    char *new_str = repeat(str, 2);
+    char *new_str = repeat(str, 3);
 
     printf("\nwynik: %s\n", new_str);
 
@@ -45,6 +45,7 @@ int main(void)
     int i;
     Node *L1, *L2;
 
+    // inicjalizacja L1 i L2
     L1 = create_node('a');
     L2 = create_node('b');
 
@@ -238,8 +239,13 @@ void join_list(Node **L1, Node **L2) {
         i = (i->next)->next;
     }
 
-    // jesli zostaly jakies w L2 to dodajemy po kolei
-    if (j) {
+    // jesli zostaly jakies w L2 i L1 juz nic nie ma to dodajemy
+    if (j && i->next == NULL) {
+        i->next = j;
+    }
+    // jesli w L2 juz nic nie ma dalej ale, L1 jeszcze ma elementy
+    else if (i->next && j) {
+        j->next = i->next;
         i->next = j;
     }
 
