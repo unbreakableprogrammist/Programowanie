@@ -8,3 +8,6 @@ program1.o : program_1.cpp
 vars.o : vars.cpp 
 	${COMPILATOR} -c vars.cpp -o vars.o
 
+.PHONY: clean
+clean : 
+	rm -f program1.o vars.o program1
