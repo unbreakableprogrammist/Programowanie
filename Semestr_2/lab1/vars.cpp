@@ -11,5 +11,5 @@ void inc_vars(){
 
 void print_vars(){
     cout<<"global extern "<<global_extern<<endl;
-    cout<<"global static "<<global_static;
+    cout<<"global static "<<global_static<<endl;
 }

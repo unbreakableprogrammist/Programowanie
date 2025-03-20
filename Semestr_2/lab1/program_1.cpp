@@ -6,6 +6,6 @@ int main(){
     print_vars();
     inc_vars();
     print_vars();
-    cout<<"global_extern : " << global_extern ;
+    //cout<<"global_extern : " << global_extern ;
     return 0;
 }
