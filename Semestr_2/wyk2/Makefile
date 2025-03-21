@@ -1,4 +1,4 @@
-COMPILATOR = g++ 
+COMPILATOR = g++ -std=c++17
 all: program
 	./program
 test.o : test.cpp
@@ -8,4 +8,4 @@ program : test.o
 
 .PHONY: clean
 clean : 
-	rm -f *.o program
+	rm -f *.o test

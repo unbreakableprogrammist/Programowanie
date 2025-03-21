@@ -13,13 +13,14 @@
 
 */
 #include<iostream>
+#include<iomanip>
 #include <cstddef> // bytes
 using namespace std;
 
-enum class owoce{jakblko , pomarancza , sliwka };
+enum class owoce{jablko , pomarancza , sliwka };
 
 int main(){
-    owoce owoc = owoce::jakblko;
+    owoce owoc = owoce::jablko;
     int *ptr = new int;   
     int *tab = new int[10];
     *ptr = 10;
@@ -35,8 +36,12 @@ int main(){
     cout<<pref;
 
     int x = 1234;
-    byte* bytes= reinterpret_cast<byte*>(&x);
-    
+    std::byte* bytes= reinterpret_cast<std::byte*>(&x);
+    for (size_t i = 0; i < sizeof(x); ++i) {
+        std::cout << "Byte " << i << ": "
+                  << "0x" << std::hex << setw(2) << std::setfill('0')
+                  << static_cast<int>(bytes[i]) << "\n";
+    }
 
 }
 
