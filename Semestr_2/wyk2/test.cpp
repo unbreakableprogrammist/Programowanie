@@ -3,8 +3,6 @@
 
 2. referencjach,
 
-3. `private`, `public` w strukturach i klasach,
-
 4. typach `enum class`,  
 
 5. typie `std::byte`,
@@ -15,6 +13,7 @@
 
 */
 #include<iostream>
+#include <cstddef> // bytes
 using namespace std;
 
 enum class owoce{jakblko , pomarancza , sliwka };
@@ -26,8 +25,19 @@ int main(){
     *ptr = 10;
     for(int i=0;i<10;i++){
         tab[i]=i*10;
-        cout<<tab[i]<<' ';
+        //cout<<tab[i]<<' ';
     }
+
+    delete ptr;
+    delete[] tab;
+    int p= 1030;
+    int& pref = p;
+    cout<<pref;
+
+    int x = 1234;
+    byte* bytes= reinterpret_cast<byte*>(&x);
+    
+
 }
 
 
