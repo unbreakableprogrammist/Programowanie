@@ -5,7 +5,7 @@
 
 3. `private`, `public` w strukturach i klasach,
 
-4. typach `enum class`,
+4. typach `enum class`,  
 
 5. typie `std::byte`,
 
@@ -15,11 +15,20 @@
 
 */
 #include<iostream>
+using namespace std;
 
-enum class owoce
+enum class owoce{jakblko , pomarancza , sliwka };
 
 int main(){
-
+    owoce owoc = owoce::jakblko;
+    int *ptr = new int;   
+    int *tab = new int[10];
+    *ptr = 10;
+    for(int i=0;i<10;i++){
+        tab[i]=i*10;
+        cout<<tab[i]<<' ';
+    }
 }
+
 
 
