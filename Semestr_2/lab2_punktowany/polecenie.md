@@ -1,5 +1,7 @@
 Laboratorium 1
 
+https://pages.mini.pw.edu.pl/~zygulas/cpp-1/
+
 Translacja
 
 W tym zadaniu stworzysz prosty projekt w C++ składający się z:
