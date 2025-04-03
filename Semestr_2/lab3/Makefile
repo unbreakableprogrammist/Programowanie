@@ -3,9 +3,9 @@ CXX=g++
 
 .PHONY: all clean
 
-all: main
-	./main
-main: main.o 
+all: program
+	./program
+program: main.o 
 	$(CXX) main.o -o main
 
 main.o: main.cpp SongDuration.hpp

@@ -1,3 +1,5 @@
+#ifndef SONGDURATION_HPP
+#define SONGDURATION_HPP
 #include<iostream>
 using namespace std;
 
@@ -20,3 +22,4 @@ public:
         return to_string(minutes) + "m " + to_string(seconds) + "s";
     }
 };
+#endif
