@@ -1,12 +1,15 @@
 CXX=g++
-CXXFLAGS=-std=c++17 -Wall -fsanitize=address,leak -g
-LDFLAGS=-fsanitize=address,leak
+
 
 .PHONY: all clean
 
-all: l3
+all: main
+	./main
+main: main.o 
+	$(CXX) main.o -o main
 
-
+main.o: main.cpp SongDuration.hpp
+	$(CXX) -c main.cpp -o main.o
 
 clean:
-	rm -f *.o l3
+	rm -f *.o main

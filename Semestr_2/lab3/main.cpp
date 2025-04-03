@@ -1,19 +1,20 @@
 #include <iostream>
 #include <vector>
 #include <memory>
+#include "SongDuration.hpp"
 
 int main() {
 
     std::cout << "*************** PART 1 (SongDuration) ***************\n\n";
 
-    /*
+    
     SongDuration duration1(0, 125);  // 2m 5s
     SongDuration duration2(3, 98);  // 4m 38s
 
     std::cout << "Duration 1: " << duration1.get_formatted() << " (" << duration1.get_total_seconds() << "s)\n";
 
     std::cout << "Duration 2: " << duration2.get_formatted() << " (" << duration2.get_total_seconds() << "s)\n";
-    */
+    
 
     std::cout << "\n*************** PART 2 (Song) ***************\n\n";
 
