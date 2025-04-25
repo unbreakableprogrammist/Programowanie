@@ -22,4 +22,18 @@ public:
         return to_string(minutes) + "m " + to_string(seconds) + "s";
     }
 };
+
+class Song{
+    private:
+        string title;
+        SongDuration duration;
+        string artist;
+    public:
+    Song() : title("Untitled"), duration(0, 0), artist("Unknown") {}
+    Song(string t,unsigned int m, unsigned int s) : title(t), duration(m, s), artist("Unknown") {}
+    Song(string t, unsigned int m, unsigned int s, string a) : title(t), duration(m, s), artist(a) {}
+
+
+};
+
 #endif
